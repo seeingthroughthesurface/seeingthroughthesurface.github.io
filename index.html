@@ -181,24 +181,32 @@ uncovers several potential avenues to further mitigate visually-induced discomfo
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+
+      <!-- Section Title -->
+      <h2 class="title is-3 has-text-centered">Passthrough Modes</h2>
+
+      <!-- Carousel -->
       <div id="results-carousel" class="carousel results-carousel">
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/PassthroughModes.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          2D illustration comparing reprojection between DP and GAP}. The foreground and background are reprojected using different geometries. In DP, each 3D point is assumed to belong to a single plane situated at a certain distance. This results in reprojecting objects at incorrect pixel locations and scale (left). In comparison, GAP uses a geometry estimate which improves the perceived location and scale (right).
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/DistortionsAndScale.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          DP versus GAP output images. Two images taken from the HMD at the same pose. DP enlarges objects, making the scene look closer to the user. The scale difference can be noticed when comparing the text on the bottom right of both images. While GAP improves the scale, it results in warping artifacts which can be observed on the edge of the door behind the hand.
-       </h2>
-     </div>
+
+        <!-- First Image -->
+        <div class="item">
+          <img src="static/images/PassthroughModes.png" alt="2D illustration comparing DP and GAP reprojection" />
+          <h2 class="subtitle has-text-centered">
+            2D illustration comparing reprojection between DP and GAP. The foreground and background are reprojected using different geometries. In DP, each 3D point is assumed to belong to a single plane situated at a certain distance. This results in reprojecting objects at incorrect pixel locations and scale (left). In comparison, GAP uses a geometry estimate which improves the perceived location and scale (right).
+          </h2>
+        </div>
+
+        <!-- Second Image -->
+        <div class="item">
+          <img src="static/images/DistortionsAndScale.png" alt="Comparison of DP and GAP outputs showing distortions and scaling" />
+          <h2 class="subtitle has-text-centered">
+            DP versus GAP output images. Two images taken from the HMD at the same pose. DP enlarges objects, making the scene look closer to the user. The scale difference can be noticed when comparing the text on the bottom right of both images. While GAP improves the scale, it results in warping artifacts which can be observed on the edge of the door behind the hand.
+          </h2>
+        </div>
+
+      </div> <!-- End carousel -->
+    </div>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
