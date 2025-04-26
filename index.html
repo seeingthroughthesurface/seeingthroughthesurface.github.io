@@ -168,41 +168,20 @@ uncovers several potential avenues to further mitigate visually-induced discomfo
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+      <div class="item">
         <!-- Your image here -->
-        <img src="static/images/PassthroughComfort-1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/PassthroughModes.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Video see-through headsets typically employ high resolution cameras to display the user’s physical environment. However,
-due to inherent hardware limitations, the camera’s perspective deviates from the user’s natural viewpoint. Hence, directly displaying
-camera feeds (direct passthrough) can result in visual artifacts such as disocclusion (1a), inaccurate perception of object positions,
-and exaggerated motion parallax (1b). In this work, we demonstrate that geometry aware passthrough algorithms can circumvent
-these artifacts, enabling precise view synthesis tailored to the user’s eyes. We present metrics for evaluating errors in perceived
-object location and warping artifacts arising from imperfect depth estimation, fundamental to a seamless passthrough experience
-(1c). Furthermore, a comprehensive user study is presented to investigate the impact of reprojection algorithms on cybersickness in
-real-world augmented reality scenarios, highlighting the significance of geometry aware passthrough systems (1d).
+          2D illustration comparing reprojection between DP and GAP}. The foreground and background are reprojected using different geometries. In DP, each 3D point is assumed to belong to a single plane situated at a certain distance. This results in reprojecting objects at incorrect pixel locations and scale (left). In comparison, GAP uses a geometry estimate which improves the perceived location and scale (right).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/PassthroughModes-1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/DistortionsAndScale.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Comparison between reprojection in direct and geometry aware passthrough. In this figure, we show a 2D illustrationto describe the reprojection step where forground and background are reprojected using different geometries. For direct passthrough,each point in 3D is assumed to belong to a single plane situated at a certain distance. However, that results in reprojecting objects atincorrect pixel locations and at incorrect scale (left). In comparison, geometry aware passthrough uses a geometry estimate whichimproves the perceived location and the scale (right).
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/DistortionsAndScale-1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Two images are shown above taken from the headset placed at the same point in the scene.We observe that DP enlarges all the objects, making the scene look closer to the user. The scale difference can be easily noticed whencomparing the text on the bottom right of both images. While GAP improves the scale, it also results in warping artifacts which canbe observed on the edge of the door behind the hand.
+          DP versus GAP output images. Two images taken from the HMD at the same pose. DP enlarges objects, making the scene look closer to the user. The scale difference can be noticed when comparing the text on the bottom right of both images. While GAP improves the scale, it results in warping artifacts which can be observed on the edge of the door behind the hand.
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/GeometricalMetric-1.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Spatial Reprojection Error. Evaluation of perceived scene geometry with reprojection error. We take the Estimated Depthand GT Depth for the same image, and reproject every pixel to the eye view. The differences in the reprojected locations is used as theevaluation criteria. On the right, we compare the effects of smoothing the depth. Since the estimated depth can have errors, warpingand rotating this depth map to the right camera can further exacerbate these errors. Gaussian smoothing of the estimated depthhelps reduce these errors on the right eye as shown above.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
@@ -226,44 +205,6 @@ real-world augmented reality scenarios, highlighting the significance of geometr
   </div>
 </section>
 <!-- End youtube video -->
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
