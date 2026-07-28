@@ -58,38 +58,44 @@
     <a href="https://tchemaly.github.io" target="_blank">Trishia El Chemaly,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Wally Niu>,
+    <a href="#" target="_blank">Wally Niu,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Yunxin Fan>,
+    <a href="#" target="_blank">Yunxin Fan,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Yuxuan Wu>,
+    <a href="#" target="_blank">Yuxuan Wu,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Fanrui Fu>,
+    <a href="#" target="_blank">Fanrui Fu,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Christoph Leuze>,
+    <a href="#" target="_blank">Christoph Leuze,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Brian Hargreaves>,
+    <a href="#" target="_blank">Brian Hargreaves,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Bruce Daniel>,
+    <a href="#" target="_blank">Bruce Daniel,
   </span>
   <span class="author-block">
-    <a href="#" target="_blank">Nikolas Blevins>,
+    <a href="#" target="_blank">Nikolas Blevins,
   </span>
 </div>
           
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Stanford University<br>IEEE Transactions on Visualization and Computer Graphics (TVCG) 2026</span>
+                    <span class="author-block">Stanford University</span>
+                        </div>
+
+                  <div class="column has-text-centered">
+                      <div class="publication-venue">
+                          IEEE Transactions on Visualization and Computer Graphics (TVCG) 2026
+                      </div>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- TVCG PDF link -->
                       <span class="link-block">
                         <a href="https://seeingthroughthesurface.github.io" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -100,8 +106,6 @@
                       </a>
                     </span>
 
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -118,9 +122,7 @@
         <img src="static/images/teaser.pdf" alt="Teaser figure showing passthrough artifacts">
       </figure>
       <h2 class="subtitle has-text-centered">
-        Video see-through headsets employ high resolution cameras to display the user's physical environment. Due to inherent hardware limitations, the camera's perspective deviates from the user's natural viewpoint. Hence, directly displaying camera feeds can result in visual artifacts such as disocclusion (1a), inaccurate perception of object positions, and exaggerated motion parallax (1b).
-      </h2>
-    </div>
+        Visualization techniques for revealing subsurface anatomical structures in augmented microscopy. (a) Original microscope view of the 3D-printed temporal bone model. (b) Opaque rendering of segmented anatomical structures augmented onto the bone surface. (c) Opaque rendering with a surface-conforming virtual aperture that reveals the subsurface structures through a localized opening. (d) Alpha blending visualization that partially reveals the underlying anatomy while preserving contextual surface cues.
   </div>
 </section>
 <!-- End teaser figure -->
@@ -133,12 +135,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Virtual Reality headsets isolate users from the real-world by restricting their perception to the virtual-world. Video See-Through
-(VST) headsets address this by utilizing world-facing cameras to create Augmented Reality experiences. However, directly displaying
-camera feeds can cause visual discomfort and cybersickness due to the inaccurate perception of scale and exaggerated motion parallax.
-This paper presents initial findings on the potential of geometry aware passthrough (GAP) systems to mitigate cybersickness through enhanced depth perception. We introduce a promising protocol for quantitatively measuring cybersickness experienced by users in VST headsets. Using this protocol, we conduct a user study to compare
-direct passthrough (DP) and geometry aware passthrough systems. To the best of our knowledge, our study is the first one to reveal reduced nausea, disorientation, and total scores of cybersickness with geometry aware passthrough. It also
-uncovers several potential avenues to further mitigate visually-induced discomfort.
+            The ability to see through the surface of the human body is central to medical augmented reality (AR) applications ranging from surgical planning to intraoperative guidance. However, accurately perceiving the depth of virtual structures relative to real anatomy remains a persistent challenge. This is particularly pronounced under the operating microscope, where high magnification, limited viewpoints, and tight error tolerances make depth and occlusion both essential and difficult to infer. Prior work has proposed methods for visualizing subsurface content using Video See-Through (VST) and Optical See-Through (OST) head-mounted displays (HMDs). However, the implementation of these approaches in surgical microscopes remains an open question due to the unique microscope perceptual conditions as well as the additive characteristics of microscope optics and display systems. To the best of our knowledge, this work is the first to investigate the perceptual accuracy of AR microscope visualization techniques for depicting virtual content inside the human body. We introduce a custom depth perception measurement apparatus based on a half-silvered mirror that enables alignment between a real measurement probe and subsurface virtual targets while viewing through a stereoscopic surgical microscope. We then implement a custom alpha blending method and a virtual aperture that conforms to the three-dimensional surface geometry. Using our apparatus, we conducted a 3 x 2 within-subjects user study evaluating depth estimation accuracy and confidence across visualization techniques. Results showed that both the virtual aperture and alpha blending significantly reduced absolute depth error compared to standard opaque rendering. Alpha blending without an aperture achieved localization accuracy comparable to opaque rendering with a virtual aperture while eliminating the systematic depth underestimation bias observed in traditional renderings. Furthermore, the presence of a virtual aperture increased users' confidence and was preferred over other methods. These findings provide insights for the design of AR visualization systems for microsurgical applications.
           </p>
         </div>
       </div>
