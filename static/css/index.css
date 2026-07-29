@@ -110,7 +110,7 @@ body {
 .publication-body img {
 }
 
-.matched-height-img {
+.image .matched-height-img {
   height: 320px;
   width: auto;
   max-width: 100%;
@@ -134,7 +134,7 @@ body {
 .results-carousel .item img {
   display: inline-block;
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
 }
 
 .results-carousel .item-featured img {
