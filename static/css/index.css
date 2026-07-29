@@ -125,6 +125,7 @@ body {
 .results-carousel .item img {
   display: inline-block;
   margin: 0 auto;
+  width: 71.43%;
 }
 
 .results-carousel video {
