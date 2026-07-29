@@ -125,7 +125,11 @@ body {
 .results-carousel .item img {
   display: inline-block;
   margin: 0 auto;
-  width: 71.43%;
+  width: 50%;
+}
+
+.results-carousel .item:first-child img {
+  width: 100%;
 }
 
 .results-carousel video {
