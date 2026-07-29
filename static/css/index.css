@@ -110,6 +110,15 @@ body {
 .publication-body img {
 }
 
+.matched-height-img {
+  height: 320px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .results-carousel {
   overflow: hidden;
 }
