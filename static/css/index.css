@@ -111,13 +111,12 @@ body {
 }
 
 .image .matched-height-img {
-  height: 640px;
+  height: 700px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
-  object-position: left;
   display: block;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .results-carousel {
